@@ -1,6 +1,6 @@
 package br.com.banco.repository.specifications;
 
-import br.com.banco.domain.Conta;
+import br.com.banco.model.Conta;
 import br.com.banco.repository.filter.ContaFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;

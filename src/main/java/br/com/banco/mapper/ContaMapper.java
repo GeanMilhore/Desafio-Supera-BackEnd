@@ -1,7 +1,7 @@
 package br.com.banco.mapper;
 
 import br.com.banco.controller.conta.contaDto.ContaResponse;
-import br.com.banco.domain.Conta;
+import br.com.banco.model.Conta;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

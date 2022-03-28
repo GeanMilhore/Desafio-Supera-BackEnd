@@ -1,4 +1,4 @@
-package br.com.banco.domain;
+package br.com.banco.model;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
 package br.com.banco.mapper;
 
 import br.com.banco.controller.transferencias.transferenciaDto.TransferenciaResponse;
-import br.com.banco.domain.Transferencia;
+import br.com.banco.model.Transferencia;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

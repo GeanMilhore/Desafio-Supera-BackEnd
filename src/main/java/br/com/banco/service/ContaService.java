@@ -2,13 +2,11 @@ package br.com.banco.service;
 
 import br.com.banco.controller.conta.contaDto.ContaRequest;
 import br.com.banco.controller.conta.contaDto.ContaResponse;
-import br.com.banco.domain.Conta;
+import br.com.banco.model.Conta;
 import br.com.banco.exception.BadRequestException;
 import br.com.banco.repository.ContaRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 @Service
 @RequiredArgsConstructor

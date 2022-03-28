@@ -1,6 +1,6 @@
 package br.com.banco.repository;
 
-import br.com.banco.domain.Conta;
+import br.com.banco.model.Conta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

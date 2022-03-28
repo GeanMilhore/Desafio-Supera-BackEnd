@@ -1,7 +1,7 @@
 package br.com.banco.controller.transferencias;
 
 import br.com.banco.controller.transferencias.saldoDto.SaldoResponse;
-import br.com.banco.domain.Transferencia;
+import br.com.banco.model.Transferencia;
 import br.com.banco.repository.filter.TransferenciaFilter;
 import br.com.banco.service.TransferenciaService;
 import lombok.AllArgsConstructor;

@@ -1,11 +1,10 @@
 package br.com.banco.service;
 
 import br.com.banco.controller.transferencias.saldoDto.SaldoResponse;
-import br.com.banco.domain.Transferencia;
+import br.com.banco.model.Transferencia;
 import br.com.banco.exception.BadRequestException;
 import br.com.banco.repository.TransferenciaRepository;
 import br.com.banco.repository.filter.TransferenciaFilter;
-import br.com.banco.repository.specifications.ContaSpecifications;
 import br.com.banco.repository.specifications.TransferenciaSpecifications;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -39,7 +38,6 @@ public class TransferenciaService {
                                             .saldoTotal(saldoTotal)
                                             .saldoPeriodo(saldoPeriodo)
                                             .build();
-
         return saldo;
     }
 
