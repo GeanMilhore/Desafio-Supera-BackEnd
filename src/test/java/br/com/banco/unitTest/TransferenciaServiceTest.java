@@ -25,6 +25,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 public class TransferenciaServiceTest {
 
     private TransferenciaService transferenciaService;
@@ -77,6 +79,12 @@ public class TransferenciaServiceTest {
 
         SaldoResponse saldo = transferenciaService.buscarSaldos(filter);
 
+        Mockito.verify(transferenciaRepositoryMock, Mockito.times(1))
+                .findAll(ArgumentMatchers.any(Specification.class));
+
+        Mockito.verify(transferenciaRepositoryMock, Mockito.times(1))
+                .findAllByContaId(ArgumentMatchers.anyLong());
+
         Assertions.assertEquals(saldo.getSaldoPeriodo(), 2050d);
         Assertions.assertEquals(saldo.getSaldoTotal(), 6150d);
     }
@@ -91,6 +99,7 @@ public class TransferenciaServiceTest {
 
         try{
             transferenciaService.buscarSaldos(filter);
+            fail();
         } catch (Exception e){
             Assertions.assertEquals(e.getClass(), BadRequestException.class);
             Assertions.assertEquals(e.getMessage(), "Nenhuma Transferência nesta conta");
